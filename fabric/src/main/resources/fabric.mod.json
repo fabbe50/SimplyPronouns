@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "simplypronouns",
+  "version": "${version}",
+
+  "name": "Simply Pronouns",
+  "description": "Allows you to see yours and others pronouns in Minecraft.",
+  "authors": ["fabbe50"],
+  "contact": {
+    "homepage": "https://fabbe50.com/modlink/simply-pronouns",
+    "issues": "https:"
+  },
+
+  "license": "GNU LGPL 3.0",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.fabbe50.simplypronouns.fabric.SimplyPronounsFabric"
+    ]
+  },
+  "mixins": [
+    "simplypronouns.mixins.json",
+    "simplypronouns-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.23",
+    "minecraft": ">=1.20.1"
+  }
+}
